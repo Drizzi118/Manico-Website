@@ -1,5 +1,60 @@
-const clickBtn = document.getElementById("clickBtn");
+/* Reset default margins */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f4f4f4, #e1e1e1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-clickBtn.addEventListener("click", () => {
-  window.location.href = "https://tigsmort.wixsite.com/my-site";
-});
+/* Main container for logo + text + button */
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff; /* Explicit color */
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  max-width: 400px;
+  width: 90%;
+  box-sizing: border-box; /* Prevent padding issues */
+}
+
+/* Logo styling */
+.banner-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1em;
+  display: block; /* Ensure no inline spacing issues */
+}
+
+/* Store title */
+.store-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5em 0;
+  color: #333333;
+}
+
+/* Button */
+button {
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
