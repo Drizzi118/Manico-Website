@@ -1,0 +1,5 @@
+const clickBtn = document.getElementById("clickBtn");
+
+clickBtn.addEventListener("click", () => {
+  window.location.href = "https://tigsmort.wixsite.com/my-site";
+});
